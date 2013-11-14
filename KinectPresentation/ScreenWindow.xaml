@@ -1,0 +1,8 @@
+﻿<Window x:Class="KinectPresentation.ScreenWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="KinectPresentation" Height="300" Width="300" AllowsTransparency="True" WindowStyle="None" Background="Transparent" Loaded="Window_Loaded" Topmost="True" ShowInTaskbar="False">
+    <Grid>
+        <Image Name="imgBoard" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="None" />
+    </Grid>
+</Window>

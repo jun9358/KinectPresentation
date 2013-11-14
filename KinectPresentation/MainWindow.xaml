@@ -1,0 +1,45 @@
+﻿<Window x:Class="KinectPresentation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="KinectPresentation Debug Window" Height="519" Width="662"
+                Loaded="WindowLoaded" Closing="WindowClosing"
+                Topmost="True" ResizeMode="NoResize" WindowStyle="ToolWindow">
+    <Grid>
+        <Image Height="480" Name="Image" Width="640" />
+        <Grid Height="50" Name="Arm" VerticalAlignment="Top" Width="640">
+            <Grid Height="50" HorizontalAlignment="Left" Name="Left" VerticalAlignment="Center" Width="160">
+                <Grid Name="LeftWrist" VerticalAlignment="Top" >
+                    <Label Content="LeftWrist" Foreground="Lime" HorizontalAlignment="Left" Name="lblLeftWrist" VerticalAlignment="Center" />
+                    <TextBlock HorizontalAlignment="Right" Name="txtLeftWrist" Text="(0, 0, 0)" VerticalAlignment="Center" Foreground="Lime" />
+                </Grid>
+                <Grid Name="LeftElbow" VerticalAlignment="Bottom" >
+                    <Label Content="LeftElbow" Foreground="Lime" HorizontalAlignment="Left" Name="lblLeftElbow" VerticalAlignment="Center" />
+                    <TextBlock HorizontalAlignment="Right" Name="txtLeftElbow" Text="(0, 0, 0)" VerticalAlignment="Center" Foreground="Lime" />
+                </Grid>
+            </Grid>
+            <Grid Height="50" HorizontalAlignment="Right" Name="Right" VerticalAlignment="Center" Width="160">
+                <Grid Name="RightWrist" VerticalAlignment="Top" >
+                    <Label Content="RightWrist" Foreground="Lime" HorizontalAlignment="Left" Name="lblRightWrist" VerticalAlignment="Center" />
+                    <TextBlock HorizontalAlignment="Right" Name="txtRightWrist" Text="(0, 0, 0)" VerticalAlignment="Center" Foreground="Lime" />
+                </Grid>
+                <Grid Name="RightElbow" VerticalAlignment="Bottom" >
+                    <Label Content="RightElbow" Foreground="Lime" HorizontalAlignment="Left" Name="lblRightElbow" VerticalAlignment="Center" />
+                    <TextBlock HorizontalAlignment="Right" Name="txtRightElbow" Text="(0, 0, 0)" VerticalAlignment="Center" Foreground="Lime" />
+                </Grid>
+            </Grid>
+            <Grid Height="25" Width="320" HorizontalAlignment="Center" Name="BoardPoint" VerticalAlignment="Top">
+                <Grid Name="LeftPoint" VerticalAlignment="Center" HorizontalAlignment="Left" Width="160">
+                    <Label Content="LeftPoint" Foreground="Lime" HorizontalAlignment="Left" Name="lblLeftPoint" VerticalAlignment="Center" />
+                    <TextBlock HorizontalAlignment="Right" Name="txtLeftPoint" Text="(0, 0, 0)" VerticalAlignment="Center" Foreground="Lime" />
+                </Grid>
+                <Grid Name="RightPoint" VerticalAlignment="Center" HorizontalAlignment="Right" Width="160">
+                    <Label Content="RightPoint" Foreground="Lime" HorizontalAlignment="Left" Name="lblRightPoint" VerticalAlignment="Center" />
+                    <TextBlock HorizontalAlignment="Right" Name="txtRightPoint" Text="(0, 0, 0)" VerticalAlignment="Center" Foreground="Lime" />
+                </Grid>
+            </Grid>
+            <Grid Height="25" Width="320" HorizontalAlignment="Center" Name="Status" VerticalAlignment="Bottom">
+                <TextBlock HorizontalAlignment="Center" Name="txtStatus" Text="Status TextBlock" VerticalAlignment="Center" Foreground="Lime" />
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
